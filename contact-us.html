@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    
+    <section>
+        <h3>Contact to learn more</h3>
+        <!--Adding a form-->
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullname">Your Name</label>
+                <input tpye="text" id="fullname" name="fullName" class="block">
+            </div>
+            <div>
+                <label for="youremail">Email</label>
+                <input type="email" id="youremail" name="youremail" class="block">
+            </div>
+            <!--added textarea-->
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <!--added heading and cirle input menu-->
+            <div>
+                <h4>Would you like to know more?</h4>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="past">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="past">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="past">
+            </div>
+            <!--adding button-->
+            <button type="submit">SEND</button>
+        </form>
+    </section>
 </body>
 </html>
