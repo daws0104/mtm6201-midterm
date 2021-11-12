@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*End of CSS reset*/
+
+
+/*---------------------
+    moblie styles
+---------------------*/
+
+/*container for all page content*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #74319e;
+    margin-bottom: 2rem;
+}
+
+body{
+    background-color:#120087;
+}
+
+
+nav li a{
+    list-style: none;
+
+}
+
+
+/*---------------------
+    header styles
+---------------------*/
+
+
+/*nav list items*/
+nav ul a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(#540188,#74319e);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 25px;
+    border: .4rem solid #120087;
+    margin-top: .5rem;
+}
+
+/*nav list*/
+nav ul{
+    text-align: center;
+}
+
+/*nav list banner*/
+header{
+    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background-size: cover;
+    height: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+.banner-big{
+    background: chocolate url(../images/banner\ copy.png) no-repeat center;
+    background-size: cover;
+    height: 20rem;
+
+}
+
+
+img[src$="sweet dreams.png"]{
+    inline-size: 33.5%;
+    height: 20rem;
+    width: 30rem;
+    right: 23%;
+    position: absolute;
+}
+
+/*---------------------
+     body styles
+---------------------*/
+
+/*What flavor/Discover our text*/
+h2 {
+    font-family: 'Gabriola';
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    color:white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*paragraph text*/
+p{
+    color: white;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/*---------------------
+      form styles
+---------------------*/
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+label {
+    color: white;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+
+.block{
+    display: block;
+    border: 2px #120087 solid;
+    width: 95%;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+#message{
+    display: block;
+    border: 2px #120087 solid;
+    width: 95%;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+button {
+    display: inline-block;
+    background-color: #77006b;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+/*---------------------
+    footer styles
+---------------------*/
+
+/*footer banner*/
+footer{
+    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background-size: cover;
+    height: 5rem;
+}
+
+
+/*footer text*/
+footer p{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    color: white;
+
+}
+
+/*---------------------
+    animation styles
+---------------------*/
+
+nav ul li a:hover{
+    background: #77006b;
+    transition-duration: 1s;
+}
+
+
+/*---------------------
+    desktop styles
+---------------------*/
+@media screen and (min-width:900px){
+    img[src$="sweet dreams.png"]{
+        right: 38%;
+    }
+    #menu1 ul{
+        list-style: none;
+    }
+    
+    #menu1 li{
+        display: inline;
+    }
+
+    nav ul a{
+        margin-top: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    header{
+        height: 3rem;
+    }
+
+    .block {
+        width: 96%;
+    }
+
+    #message {
+        width: 96%;
+    }
+
+}
