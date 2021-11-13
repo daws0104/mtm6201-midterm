@@ -190,7 +190,7 @@ nav ul{
 
 /*nav list banner*/
 header{
-    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
     height: 9rem;
     padding-top: 1rem;
@@ -200,14 +200,14 @@ header{
 
 
 .banner-big{
-    background: chocolate url(../images/banner\ copy.png) no-repeat center;
+    background: chocolate url(../images/banner.png) no-repeat center;
     background-size: cover;
     height: 20rem;
 
 }
 
 
-img[src$="sweet dreams.png"]{
+img[src$="logo.png"]{
     inline-size: 33.5%;
     height: 20rem;
     width: 30rem;
@@ -247,7 +247,7 @@ p{
 
 /*footer banner*/
 footer{
-    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
     height: 5rem;
 }
@@ -275,9 +275,35 @@ nav ul li a:hover{
     desktop styles
 ---------------------*/
 @media screen and (min-width:900px){
-    img[src$="sweet dreams.png"]{
+    img[src$="logo.png"]{
         right: 38%;
     }
+
+    .about-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 7rem 1fr;
+    }
+
+    h2{
+        padding-left: 3rem;
+        grid-column-start: span 2;
+    }
+
+    .about-pic{
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+        grid-row-start: 2;
+    }
+
+    p{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        max-width: 20rem;
+    }
+
+
+
     #menu1 ul{
         list-style: none;
     }

@@ -141,7 +141,7 @@ table {
     moblie styles
 ---------------------*/
 
-/*container for all page content*/
+/*container for all page content: sets font family, max-width and background color*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,11 +150,12 @@ table {
     margin-bottom: 2rem;
 }
 
+/*sets page's backgound color*/
 body{
     background-color:#120087;
 }
 
-
+/*nav list anchors tags: removes list style for nagavition menu*/
 nav li a{
     list-style: none;
 
@@ -166,7 +167,7 @@ nav li a{
 ---------------------*/
 
 
-/*nav list items*/
+/*nav list items: added padding and borders to create a buuton, placed on wood panal banner*/
 nav ul a{
     text-align: center;
     display: inline-block;
@@ -183,14 +184,14 @@ nav ul a{
     margin-top: .5rem;
 }
 
-/*nav list*/
+/*nav list: centers text*/
 nav ul{
     text-align: center;
 }
 
-/*nav list banner*/
+/*nav list banner:makes the wood panel PNG into a background image for Nav menu*/
 header{
-    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
     height: 9rem;
     padding-top: 1rem;
@@ -198,16 +199,16 @@ header{
     margin-bottom: 2rem;
 }
 
-
+/*ice cream banner: makes the banner PNG into a background image for Logo*/
 .banner-big{
-    background: chocolate url(../images/banner\ copy.png) no-repeat center;
+    background: chocolate url(../images/banner.png) no-repeat center;
     background-size: cover;
     height: 20rem;
 
 }
 
-
-img[src$="sweet dreams.png"]{
+/*Sweet dreams logo: placed on ice cream banner, resized to fit height of banner*/
+img[src$="logo.png"]{
     inline-size: 33.5%;
     height: 20rem;
     width: 30rem;
@@ -219,7 +220,7 @@ img[src$="sweet dreams.png"]{
      body styles
 ---------------------*/
 
-/*What flavor/Discover our text*/
+/*What flavor/Discover our text: sets font family, text color and bolds text*/
 h2 {
     font-family: 'Gabriola';
     font-weight: 700;
@@ -231,7 +232,7 @@ h2 {
     padding-right: 1rem;
 }
 
-/*paragraph text*/
+/*paragraph text: sets text color and makes padding*/
 p{
     color: white;
     padding-bottom: .5rem;
@@ -240,27 +241,27 @@ p{
     padding-right: 1rem;
 }
 
-/*sheep text*/
+/*sheep text: bolded and centered text*/
 h3 {
     font-weight: 700;
     max-width: 10rem;
     text-align: center;
 }
 
-/*moblie sheep grid*/
+/*moblie sheep grid: creates a grid with 2 coloums and 3 rows */
 .sheeps{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 
-/*full sheep section*/
+/*full sheep section: added padding*/
 .sheeps{
     padding-left: 5rem;
 }
 
 
-/*indiviacl sheep divs*/
+/*indiviacl sheep divs: added padding*/
 .sheep{
     padding-bottom: .5rem;
     padding-top: .5rem;
@@ -271,15 +272,15 @@ h3 {
     footer styles
 ---------------------*/
 
-/*footer banner*/
+/*footer banner:makes the wood panel PNG into a background image for footer*/
 footer{
-    background: brown url(../images/pexels-pixabay-301378.jpg) no-repeat center;
+    background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
     height: 5rem;
 }
 
 
-/*footer text*/
+/*footer text:adds text color and padding, placed on wood panal banner*/
 footer p{
     padding-left: 1rem;
     padding-top: 2rem;
@@ -290,6 +291,7 @@ footer p{
 /*---------------------
     animation styles
 ---------------------*/
+/*sheep animation: rotates and moves sheep upwards*/
 @keyframes move{
     25%{
         transform: rotate(25deg) translate(-5rem);
@@ -327,7 +329,7 @@ h3{
     desktop styles
 ---------------------*/
 @media screen and (min-width:900px){
-    img[src$="sweet dreams.png"]{
+    img[src$="logo.png"]{
         right: 38%;
     }
     #menu1 ul{
@@ -347,6 +349,7 @@ h3{
         height: 3rem;
     }
 
+    /*moblie sheep grid: creates a grid with 3 coloums and 2 rows */
     .sheeps{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
