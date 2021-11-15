@@ -267,7 +267,6 @@ h3 {
     padding-top: .5rem;
 }
 
-
 /*---------------------
     footer styles
 ---------------------*/
@@ -304,21 +303,24 @@ footer p{
       }
 }
 
-
+/*nav menu anchors: transition to another color on hover*/
 nav ul li a:hover{
     background: #77006b;
     transition-duration: 1s;
 }
 
+/*sheep: triggers the move animation on hover for 5 seconds */
 .sheep:hover {
     animation-name: move;
     animation-duration: 5s;
 }
 
+/*sheep: places H3 text on sheep images*/
 .sheep{
     position: relative;
 }
 
+/*ice cream titles: places H3 text on sheep images*/
 h3{
     position: absolute;
     top: 6rem;
@@ -329,22 +331,28 @@ h3{
     desktop styles
 ---------------------*/
 @media screen and (min-width:900px){
+    /*logo: pushes logo right*/
     img[src$="logo.png"]{
         right: 38%;
     }
+
+    /*nav menu: removes list styles*/
     #menu1 ul{
         list-style: none;
     }
     
+    /*nav menu items: displey the styles inline*/
     #menu1 li{
         display: inline;
     }
 
+    /*nav  anchors: adds margins to top and right*/
     nav ul a{
         margin-top: 1.5rem;
         margin-right: 3rem;
     }
 
+    /*header: makes hight 3rems*/
     header{
         height: 3rem;
     }
@@ -353,5 +361,31 @@ h3{
     .sheeps{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*food grid: creates a grid with 2 coloums and 2 rows places paragrah text next to food picture*/
+    .food-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 7rem 1fr;
+    }
+    
+    /*Discover title: spans title across two colums and adds left padding*/
+    .natural{
+        padding-left: 3rem;
+        grid-column-start: span 2;
+    }
+
+    /*food pic: adds padding to the left and bottom */
+    .food-pic{
+        padding-left: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    /*food text: adds padding to the left and top and a max-width*/
+    .food-text{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        max-width: 20rem;
     }
 }

@@ -141,7 +141,7 @@ table {
     moblie styles
 ---------------------*/
 
-/*container for all page content*/
+/*container for all page content: sets font family, max-width and background color*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,11 +150,12 @@ table {
     margin-bottom: 2rem;
 }
 
+/*sets page's backgound color*/
 body{
     background-color:#120087;
 }
 
-
+/*nav list anchors tags: removes list style for nagavition menu*/
 nav li a{
     list-style: none;
 
@@ -166,7 +167,7 @@ nav li a{
 ---------------------*/
 
 
-/*nav list items*/
+/*nav list items: added padding and borders to create a buuton, placed on wood panal banner*/
 nav ul a{
     text-align: center;
     display: inline-block;
@@ -183,12 +184,12 @@ nav ul a{
     margin-top: .5rem;
 }
 
-/*nav list*/
+/*nav list: centers text*/
 nav ul{
     text-align: center;
 }
 
-/*nav list banner*/
+/*nav list banner:makes the wood panel PNG into a background image for Nav menu*/
 header{
     background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
@@ -198,7 +199,7 @@ header{
     margin-bottom: 2rem;
 }
 
-
+/*ice cream banner: makes the banner PNG into a background image for Logo*/
 .banner-big{
     background: chocolate url(../images/banner.png) no-repeat center;
     background-size: cover;
@@ -206,7 +207,7 @@ header{
 
 }
 
-
+/*Sweet dreams logo: placed on ice cream banner, resized to fit height of banner*/
 img[src$="logo.png"]{
     inline-size: 33.5%;
     height: 20rem;
@@ -219,7 +220,7 @@ img[src$="logo.png"]{
      body styles
 ---------------------*/
 
-/*What flavor/Discover our text*/
+/*What flavor/Discover our text: sets font family, text color and bolds text*/
 h2 {
     font-family: 'Gabriola';
     font-weight: 700;
@@ -231,7 +232,7 @@ h2 {
     padding-right: 1rem;
 }
 
-/*paragraph text*/
+/*paragraph text: sets text color and makes padding*/
 p{
     color: white;
     padding-bottom: .5rem;
@@ -242,6 +243,8 @@ p{
 /*---------------------
       form styles
 ---------------------*/
+
+/*Contact to title: sets text colour and font-size, adds padding to left, bottom and top*/
 h3 {
     color: white;
     font-size: 1.5rem;
@@ -250,6 +253,7 @@ h3 {
     padding-top: .5rem;
 }
 
+/*form label: sets text colour adds padding to left, bottom and top*/
 label {
     color: white;
     padding-left: 1rem;
@@ -257,6 +261,7 @@ label {
     padding-top: .5rem;
 }
 
+/*form block input: displays block, adds border, adds margins, sets width as 95%*/
 .block{
     display: block;
     border: 2px #120087 solid;
@@ -266,6 +271,7 @@ label {
     margin-top: .5rem;
 }
 
+/*form block message input: displays block, adds border, adds margins, sets width as 95%*/
 #message{
     display: block;
     border: 2px #120087 solid;
@@ -275,7 +281,7 @@ label {
     margin-top: .5rem;
 }
 
-/*styleing send button*/
+/*send button: sets text  and background colours, creates a border, adds padding, displays inline-block */
 button {
     display: inline-block;
     padding: .7em;
@@ -291,7 +297,7 @@ button {
     footer styles
 ---------------------*/
 
-/*footer banner*/
+/*footer banner:makes the wood panel PNG into a background image for footer*/
 footer{
     background: brown url(../images/wood.jpg) no-repeat center;
     background-size: cover;
@@ -299,7 +305,7 @@ footer{
 }
 
 
-/*footer text*/
+/*footer text:adds text color and padding, placed on wood panal banner*/
 footer p{
     padding-left: 1rem;
     padding-top: 2rem;
@@ -311,6 +317,7 @@ footer p{
     animation styles
 ---------------------*/
 
+/*nav menu anchors: transition to another color on hover*/
 nav ul li a:hover{
     background: #77006b;
     transition-duration: 1s;
@@ -321,30 +328,38 @@ nav ul li a:hover{
     desktop styles
 ---------------------*/
 @media screen and (min-width:900px){
+    /*logo: pushes logo right*/
     img[src$="logo.png"]{
         right: 38%;
     }
+
+    /*nav menu: removes list styles*/
     #menu1 ul{
         list-style: none;
     }
     
+    /*nav menu items: displey the styles inline*/
     #menu1 li{
         display: inline;
     }
-
+    
+    /*nav  anchors: adds margins to top and right*/
     nav ul a{
         margin-top: 1.5rem;
         margin-right: 3rem;
     }
-
+    
+    /*header: makes hight 3rems*/
     header{
         height: 3rem;
     }
 
+    /*form block input: gives it a width of 96%*/
     .block {
         width: 96%;
     }
 
+    /*form block message input: gives it a width of 96%*/
     #message {
         width: 96%;
     }
